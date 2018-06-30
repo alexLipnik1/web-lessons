@@ -1,0 +1,75 @@
+.container {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    .nav{
+        margin-bottom: 25%;
+        background: #f3f3f3;
+        height: 150px;
+        width: 100%;
+        // width: 50%;
+        // margin-top: 50px;
+        // border: red, 10px, 0, 10px, 0;
+        border-top: 10px solid darkgray;
+        border-bottom: 10px dotted darkblue;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        #rectangle {
+            height: 100px;
+            width: 100px;
+            background: darkgreen;
+        }
+
+        #circle {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            background: darkgreen;
+        }
+
+        #triangle {
+            border-right: 50px solid;
+            border-bottom: 50px solid;
+            border-left: 50px solid #f3f3f3;
+            border-top: 50px solid #f3f3f3;
+            // height: 100px;
+            // width: 100px;
+            background: darkgreen;
+        }
+
+        #triangle2 {
+            position: relative;
+            border-right: 50px solid;
+            border-bottom: 50px solid;
+            border-left: 50px solid transparent;
+            border-top: 50px solid transparent;
+            // height: 100px;
+            // width: 100px;
+            background: #f3f3f3;
+            transform: rotate(0deg);
+            
+
+            &::before{
+                top: 0;
+                margin: -50px;
+                content: '';
+                position: absolute;
+                border-right: 50px solid;
+                border-left: 50px solid transparent;
+                border-top: 50px solid transparent;
+                border-bottom: 50px solid;
+                transform: rotate(180deg);
+
+            }
+        }
+    }
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}

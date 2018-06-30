@@ -1,0 +1,79 @@
+.container {
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .nav {
+  margin-bottom: 25%;
+  background: #f3f3f3;
+  height: 150px;
+  width: 100%;
+  border-top: 10px solid darkgray;
+  border-bottom: 10px dotted darkblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .nav #rectangle {
+  height: 100px;
+  width: 100px;
+  background: darkgreen;
+}
+
+.container .nav #circle {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background: darkgreen;
+}
+
+.container .nav #triangle {
+  border-right: 50px solid;
+  border-bottom: 50px solid;
+  border-left: 50px solid #f3f3f3;
+  border-top: 50px solid #f3f3f3;
+  background: darkgreen;
+}
+
+.container .nav #triangle2 {
+  position: relative;
+  border-right: 50px solid;
+  border-bottom: 50px solid;
+  border-left: 50px solid transparent;
+  border-top: 50px solid transparent;
+  background: #f3f3f3;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.container .nav #triangle2::before {
+  top: 0;
+  margin: -50px;
+  content: '';
+  position: absolute;
+  border-right: 50px solid;
+  border-left: 50px solid transparent;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+/*# sourceMappingURL=ex1.css.map */
